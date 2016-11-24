@@ -40,4 +40,4 @@ IS
     '发送时间';
 
 /*本表格扩充PARAM_STR字段长度为2000*/
-alter table WS_SEND_RECORD alter PARAM_STR set data type varchar(2000);
+alter table WS_SEND_RECORD alter PARAM_STR set data type varchar(5000);
