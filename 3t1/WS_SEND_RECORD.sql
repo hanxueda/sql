@@ -5,7 +5,7 @@ CREATE TABLE
         ORG_CODE VARCHAR(12),
         DOMAIN_CODE VARCHAR(8),
         BEAN_ID VARCHAR(128),
-        PARAM_STR VARCHAR(2000),
+        PARAM_STR CLOB,
         SEND_COUNT VARCHAR(100),
         SEND_STATUS SMALLINT,
         SEND_TIME TIMESTAMP,
@@ -38,6 +38,3 @@ IS
 COMMENT ON COLUMN WS_SEND_RECORD.SEND_TIME
 IS
     '发送时间';
-
-/*本表格扩充PARAM_STR字段长度为2000*/
-alter table WS_SEND_RECORD alter PARAM_STR set data type varchar(5000);
